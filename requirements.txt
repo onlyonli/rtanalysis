@@ -1,2 +1,2 @@
 matplotlib==3.4.1
-
+streamlit-lottie==0.0.3
