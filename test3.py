@@ -1,7 +1,7 @@
 import time
 import requests
 import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
@@ -12,7 +12,7 @@ import webbrowser
 
 df = pd.read_csv('survey_form.csv')
 df1 = df.groupby('age').count()
-url = 'https://traffic-flow-counter.herokuapp.com/' #transfer to test6.py
+url = './test6.py' #transfer to test6.py
 
 st.title('Road Traffic Analysis')
 def load_lottieurl(url: str):
